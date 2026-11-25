@@ -1,0 +1,38 @@
+{
+  "name": "yanjian-literature-reference",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts",
+    "test": "tsx --test tests/core.test.ts tests/research.test.ts",
+    "test:research": "tsx tests/research-browser.ts",
+    "test:browser": "tsx tests/browser.ts",
+    "test:api": "tsx tests/api.ts",
+    "format": "prettier --write src server shared tests vite.config.ts"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "saxes": "^6.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "playwright": "^1.56.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.9"
+  }
+}

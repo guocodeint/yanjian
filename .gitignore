@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+artifacts/
+data/
+*.log
+/交付/
+/交付预览/
+*.sqlite3
+*.sqlite3-*
+*.key
+*.pem

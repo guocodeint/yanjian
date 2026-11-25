@@ -1,0 +1,14 @@
+import { DatabaseSync } from "node:sqlite";
+import { mkdirSync } from "node:fs";
+import { resolve } from "node:path";
+export const dataDir = resolve(process.env.DATA_DIR || "data");
+mkdirSync(dataDir, { recursive: true });
+export const db = new DatabaseSync(resolve(dataDir, "research.sqlite3"));
+db.exec(`PRAGMA journal_mode=WAL; PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS users(id TEXT PRIMARY KEY,username TEXT NOT NULL UNIQUE,password_hash TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS sessions(token_hash TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,expires_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS projects(id TEXT NOT NULL,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,payload TEXT NOT NULL,updated_at TEXT NOT NULL,PRIMARY KEY(user_id,id));
+CREATE TABLE IF NOT EXISTS exports(id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,project_id TEXT NOT NULL,filename TEXT NOT NULL,object_key TEXT NOT NULL,mime TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS idx_projects_owner_updated ON projects(user_id,updated_at);
+CREATE INDEX IF NOT EXISTS idx_exports_owner ON exports(user_id,created_at);
+`);

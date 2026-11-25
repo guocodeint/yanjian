@@ -1,0 +1,46 @@
+{
+  "label": "Europe PMC 公开题录与摘要快照，仅供手工演示",
+  "fetchedAt": "2026-11-16T09:14:52.850Z",
+  "query": "(quercetin AND bioavailability) AND FIRST_PDATE:[2020-01-01 TO 2025-12-31]",
+  "items": [
+    {
+      "key": "MED:41596066",
+      "source": "MED",
+      "id": "41596066",
+      "title": "Valorization of Onion-Processing Waste: Digestive Fate, Bioavailability, and Cellular Antioxidant Properties of Red and Yellow Peels Polyphenols.",
+      "authors": "Bavaro AR, D'Antuono I, Bruno A, Ramires FA, Linsalata V, Bleve G, Cardinali A, Garbetta A.",
+      "year": "2025",
+      "journal": "Antioxidants (Basel, Switzerland)",
+      "abstract": "Onion ( Allium cepa L.) peels represent a major agro-industrial by-product and are a rich source of polyphenols, with recognized antioxidant properties. This study compared the polyphenolic profile of two onion cultivars peels: red \" Rossa di Tropea \" and yellow \" Recas \". Their digestive stability, intestinal bioavailability, and antioxidant activity were evaluated. Hydroalcoholic extracts were characterized by HPLC-DAD, subjected to a static gastrointestinal digestion model, and assessed for transport across differentiated Caco-2 monolayers. Antioxidant properties were determined using DPPH, FRAP, Cellular Antioxidant Activity (CAA), and intracellular glutathione (GSH) assays. Red peels contained a higher total polyphenol content (28.44 mg/g DW) than yellow peels (15.61 mg/g DW), including anthocyanins uniquely present in the red cultivar. Digestive stability varied markedly between cultivars, with yellow peels showing greater intestinal recovery (72.7%) than red peels (49.1%). Glycosylated flavonols were more stable and exhibited moderate intestinal transport (Papp = 1.1-9.9 × 10 -6 cm·s -1 ), whereas quercetin aglycone showed low permeability. Red peel extracts demonstrated stronger chemical antioxidant activity, while yellow peels were more effective in cell-based assays, displaying higher CAA values and inducing a pronounced increase in intracellular GSH. Overall, onion peel extracts exhibit promising antioxidant and biological properties. However, their limited bioavailability highlights the need for formulation strategies to enhance gastrointestinal stability and intestinal uptake, supporting their potential use as sustainable functional ingredients.",
+      "doi": "10.3390/antiox15010007",
+      "url": "https://europepmc.org/article/MED/41596066",
+      "fetchedAt": "2026-11-16T09:14:52.840Z"
+    },
+    {
+      "key": "MED:41235439",
+      "source": "MED",
+      "id": "41235439",
+      "title": "Quercetin as a Therapeutic Agent for Oral Cancer: Current Evidence and Future Directions.",
+      "authors": "Sun H, Wang H, Guo S.",
+      "year": "2026",
+      "journal": "Asia-Pacific journal of clinical oncology",
+      "abstract": "Oral cancer, specifically oral squamous cell carcinoma, is rapidly progressive, with a high recurrence rate and grave prognosis. Treatment modalities like surgery, chemotherapy, and radiotherapy are customarily associated with noxious side effects as well as drug resistance. The food constituent flavonoid quercetin has been identified as anticancer through several mechanisms, including apoptosis induction, suppression of metastasis, cell cycle arrest, and chemosensitization. Its clinical application is, however, restricted by poor systemic absorption. Novel nano-formulations such as liposomes, polymeric nanoparticles, etc., have emerged for improving the stability, bioavailability, and therapeutic action of quercetin. Artificial intelligence has also been reported to be of potential use in predicting patient response to quercetin, recognizing new molecular targets, and customizing treatment regimens. Future research should be conducted with clinical trials to establish the effectiveness of quercetin as an adjuvant treatment and fine-tune targeted delivery systems for it. There is a therapeutic promise for quercetin across multiple types of oral cancer due to its multi-targeting potential. Quercetin, in combination with traditional and immunotherapeutic strategies, represents a promising new strategy with the potential to overcome treatment barriers and reduce toxicity in oral cancer management.",
+      "doi": "10.1111/ajco.70046",
+      "url": "https://europepmc.org/article/MED/41235439",
+      "fetchedAt": "2026-11-16T09:14:52.841Z"
+    },
+    {
+      "key": "MED:41412433",
+      "source": "MED",
+      "id": "41412433",
+      "title": "Micellar Co-Delivery of Fulvestrant and Quercetin to enhance oral Bioavailability: A potential Bioenhancement strategy.",
+      "authors": "Fuentes P, Moretton MA, Flor S, Höcht C, Chiappetta DA, Bernabeu EA.",
+      "year": "2026",
+      "journal": "International journal of pharmaceutics",
+      "abstract": "This study aimed to develop and evaluate polymeric mixed micelles for the oral delivery of Fulvestrant (FVT), with or without Quercetin (QUE), using Soluplus® and Pluronic® F127. Among the tested weight ratios, 75:25 micelles exhibited optimal properties, including average particle sizes below 200 nm, a narrow size distribution (PDI 90 %. The optimized formulations (FVT-MM and FVT-QUE-MM) showed spherical morphology, stability over 15 days, and sustained FVT release without an initial burst. In vitro, these formulations preserved the antiproliferative activity of FVT against MCF-7 cells after 72 h of treatment and maintained high cytocompatibility in Caco-2 cells (>90 %). Ex vivo Franz diffusion studies with porcine intestine revealed enhanced FVT permeation for FVT-QUE-MM (∼1.8-fold vs. FVT-MM). Both formulations also inhibited MCF-7 cell adhesion to fibronectin and migration, with stronger effects observed for FVT-QUE-MM. Oral pharmacokinetic studies in rats demonstrated significantly increased relative FVT bioavailability for FVT-MM (2.85- fold) and FVT-QUE-MM (3.71-fold) compared to FVT suspension. These findings suggest that Soluplus®/Pluronic® F127 micelles, particularly those co-loaded with QUE, represent a promising strategy to improve the oral delivery and therapeutic efficacy of FVT.",
+      "doi": "10.1016/j.ijpharm.2025.126512",
+      "url": "https://europepmc.org/article/MED/41412433",
+      "fetchedAt": "2026-11-16T09:14:52.841Z"
+    }
+  ]
+}
