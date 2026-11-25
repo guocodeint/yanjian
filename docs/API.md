@@ -23,9 +23,7 @@
 
 Paper.key 为 `source:id`，url 仅由来源和 ID 构造。客户端提交分析时不传不可信正文；服务端重新检索。新简报的 claims 保存 text、refs、highlight、pending。每个 ref 必须指向同一项目证据快照中的原句。旧版段落引用仍可读取。original 保留生成时的分析。
 
-参考版已使用 revision 乐观锁：保存必须携带当前修订号，成功后服务端递增；冲突返回 409，保留服务器版本并提示下载本地备份后刷新。客户端同一项目保存串行化。正式 Qoder 数据库应使用事务或条件更新实现相同行为。实时协同合并不在首版范围内。
-
-公开部署不要直接托管参考版的本地磁盘适配器。Sites 必须将 database/projects 模块替换为平台持久化能力，文件必须私有访问。AI 队列若改为异步任务，可在保持前端业务行为的前提下增加任务提交与状态查询 API。
+项目保存使用 revision 乐观锁：保存必须携带当前修订号，成功后服务端递增；冲突返回 409，保留服务器版本并提示下载本地备份后刷新。客户端同一项目保存串行化。实时协同合并不在首版范围内。
 
 个人设置接口均需登录。GET /api/settings 返回昵称、研究方向、模型和配置状态。PUT /api/settings/profile 更新 nickname、focus。PUT /api/settings/ai 更新 model 及可选 key，DELETE /api/settings/ai 清除本账号密钥。POST /api/auth/password 验证 currentPassword，设置 newPassword 并替换会话。
 

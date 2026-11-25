@@ -71,9 +71,6 @@ export default function Auth({ onLogin }: { onLogin: (user: User) => void }) {
             </span>
           </div>
         </div>
-        <p className="footnote">
-          当前为独立参考原型。Qoder Sites 托管部署由后续重建工程完成。
-        </p>
       </section>
       <section className="auth-form-wrap">
         <form onSubmit={submit}>

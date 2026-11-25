@@ -177,6 +177,6 @@ else {
 const port = Number(process.env.PORT || 8787);
 app.listen(port, process.env.HOST || "127.0.0.1", () =>
   console.log(
-    `研笺参考原型：http://${process.env.HOST || "127.0.0.1"}:${port}`,
+    `研笺文献研究助手：http://${process.env.HOST || "127.0.0.1"}:${port}`,
   ),
 );
